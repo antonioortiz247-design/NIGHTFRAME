@@ -2,11 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Monumental";
+  src: local("Monumental"), local("Monument Extended"), local("MonumentExtended-Regular"), local("Monument Extended Regular");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700 900;
+}
+
 :root {
   --night: #0A0A0A;
   --off-white: #E8E6E3;
   --signal-red: #C1121F;
-  --font-display: "Arial Black", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Monumental", "Monument Extended", "MonumentExtended", "PP Monument Extended", "Arial Black", "Helvetica Neue", Arial, sans-serif;
   --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
 }
 

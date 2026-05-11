@@ -29,3 +29,8 @@ El proyecto está listo para Vercel. Importa el repositorio, conserva el preset 
 ## Reemplazo de assets de campaña
 
 Los mockups actuales son placeholders generados con CSS. Para integrar fotografía o renders reales, usa los identificadores `data-asset-slot` en las tarjetas de producto y reemplaza el contenido visual dentro de cada `.product-image`.
+
+
+## Tipografía
+
+La identidad editorial prioriza `Monumental` / `Monument Extended` para titulares, logo y jerarquía de marca. Por licencia, el repositorio usa `local()` y fallbacks seguros; si se cuenta con el archivo licenciado, puede añadirse al proyecto y declararse en `app/globals.css`.

@@ -14,7 +14,7 @@ const config: Config = {
         "signal-red": "#C1121F",
       },
       fontFamily: {
-        display: ["Arial Black", "Helvetica Neue", "Arial", "sans-serif"],
+        display: ["Monumental", "Monument Extended", "MonumentExtended", "PP Monument Extended", "Arial Black", "Helvetica Neue", "Arial", "sans-serif"],
         mono: ["IBM Plex Mono", "SFMono-Regular", "Consolas", "monospace"],
       },
     },
