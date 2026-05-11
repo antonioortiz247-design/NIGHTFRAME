@@ -28,7 +28,16 @@ El proyecto está listo para Vercel. Importa el repositorio, conserva el preset 
 
 ## Reemplazo de assets de campaña
 
-Los mockups actuales son placeholders generados con CSS. Para integrar fotografía o renders reales, usa los identificadores `data-asset-slot` en las tarjetas de producto y reemplaza el contenido visual dentro de cada `.product-image`.
+Las siluetas CSS fueron retiradas. El sitio ya apunta a archivos `.webp` dentro de `public/images/drop001/`; solo sube tus imágenes con estos nombres:
+
+- `public/images/drop001/campaign/hero.webp`
+- `public/images/drop001/products/no-signal.webp`
+- `public/images/drop001/products/static-memory.webp`
+- `public/images/drop001/products/midnight-transmission.webp`
+- `public/images/drop001/products/lost-frame.webp`
+- `public/images/drop001/archive/archive-01.webp` a `archive-06.webp`
+
+Consulta `public/images/drop001/README.md` para la guía completa de slots.
 
 
 ## Tipografía

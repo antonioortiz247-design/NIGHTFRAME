@@ -22,7 +22,7 @@ function HeroSection() {
   return (
     <section className="relative isolate flex min-h-screen items-center justify-center px-5 py-8 sm:px-8 lg:px-12">
       <div className="absolute inset-0 -z-10">
-        <TransmissionFrame className="h-full w-full border-0 opacity-70" />
+        <TransmissionFrame className="hero-campaign-asset h-full w-full border-0 opacity-70" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_35%,rgba(232,230,227,0.08),transparent_25%),linear-gradient(180deg,rgba(10,10,10,0.24),#0A0A0A_88%)]" />
       </div>
 
@@ -129,7 +129,6 @@ function ProductShowcase() {
           {products.map((product, index) => (
             <article className="product-card" key={product.code} data-asset-slot={product.assetSlot}>
               <div className="product-image" data-product={product.name.toLowerCase().replaceAll(" ", "-")}>
-                <div className="tee-shape" data-side={product.side} />
                 <span className="mono-label absolute left-5 top-5 text-off-white/40">{product.code}</span>
                 <span className="mono-label absolute bottom-5 right-5 text-signal-red/70">{product.side}</span>
               </div>
