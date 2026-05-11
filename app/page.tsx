@@ -45,7 +45,7 @@ function HeroSection() {
         <p className="mono-label mb-6 text-signal-red/80">LANZAMIENTO LIMITADO / ARCHIVO DE PRENDAS</p>
         <h1 className="brand-title text-[clamp(3.4rem,13vw,12rem)] leading-[0.78] tracking-[-0.08em]">NIGHTFRAME</h1>
         <p className="mt-8 max-w-3xl text-balance font-mono text-xs uppercase tracking-[0.34em] text-off-white/70 sm:text-sm">
-          PRENDAS RECUPERADAS DE UNA PELÍCULA QUE NUNCA EXISTIÓ.
+          LOST FRAMES FROM A FILM THAT NEVER EXISTED.
         </p>
         <div className="mt-10 flex flex-col gap-3 sm:flex-row">
           <a href="#drop" className="btn-primary">Explorar Drop_001</a>
@@ -195,7 +195,7 @@ function FooterSection() {
       <div className="grid gap-10 md:grid-cols-[1fr_auto] md:items-end">
         <div>
           <p className="font-display text-3xl uppercase leading-none tracking-[-0.08em] text-off-white sm:text-5xl">NIGHTFRAME</p>
-          <p className="mono-label mt-4 max-w-xl leading-relaxed text-off-white/40">MÉXICO / DROP_001 — NO SIGNAL / OVERSIZED STREETWEAR FROM A FILM THAT NEVER EXISTED.</p>
+          <p className="mono-label mt-4 max-w-xl leading-relaxed text-off-white/40">MÉXICO / DROP_001 — NO SIGNAL / LOST FRAMES FROM A FILM THAT NEVER EXISTED.</p>
         </div>
         <div className="flex flex-wrap gap-3 md:justify-end">
           {socials.map((social) => (
