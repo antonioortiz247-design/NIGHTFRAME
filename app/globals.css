@@ -6,6 +6,8 @@
   --night: #0A0A0A;
   --off-white: #E8E6E3;
   --signal-red: #C1121F;
+  --font-display: "Arial Black", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
 }
 
 * {
@@ -223,9 +225,6 @@ body::before {
   transition: transform 600ms ease, border-color 600ms ease;
 }
 
-.product-card:nth-child(1) {
-  grid-column: 1 / -1;
-}
 
 .product-card:hover {
   border-color: rgba(232, 230, 227, 0.28);
@@ -359,11 +358,52 @@ body::before {
     font-size: 0.62rem;
   }
 
-  .product-card:nth-child(1) {
-    grid-column: auto;
-  }
 
   .product-image {
     min-height: 24rem;
   }
+}
+
+.spec-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  max-width: 44rem;
+}
+
+.spec-strip span,
+.footer-link {
+  border: 1px solid rgba(232, 230, 227, 0.12);
+  color: rgba(232, 230, 227, 0.48);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  line-height: 1;
+  padding: 0.72rem 0.78rem;
+  text-transform: uppercase;
+  transition: border-color 500ms ease, color 500ms ease, transform 500ms ease;
+}
+
+.footer-link:hover {
+  border-color: rgba(193, 18, 31, 0.62);
+  color: var(--off-white);
+  transform: translateY(-2px);
+}
+
+.product-image[data-product="static-memory"] {
+  background: radial-gradient(circle at 38% 26%, rgba(232, 230, 227, 0.14), transparent 22%),
+    linear-gradient(90deg, rgba(232, 230, 227, 0.045), transparent 18%, rgba(193, 18, 31, 0.08) 49%, transparent 52%),
+    linear-gradient(180deg, #111, #040404);
+}
+
+.product-image[data-product="midnight-transmission"] {
+  background: radial-gradient(circle at 70% 18%, rgba(193, 18, 31, 0.14), transparent 24%),
+    linear-gradient(135deg, rgba(232, 230, 227, 0.06), transparent 32%),
+    linear-gradient(180deg, #161616, #050505);
+}
+
+.product-image[data-product="lost-frame"] {
+  background: linear-gradient(90deg, rgba(232, 230, 227, 0.06), transparent 12%, rgba(232, 230, 227, 0.025) 13%, transparent 14%),
+    radial-gradient(circle at 50% 12%, rgba(232, 230, 227, 0.11), transparent 25%),
+    linear-gradient(180deg, #0d0d0d, #020202);
 }

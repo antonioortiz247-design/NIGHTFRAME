@@ -2,14 +2,14 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "NIGHTFRAME — Lost Frames From A Film That Never Existed",
+  title: "NIGHTFRAME México — DROP_001 NO SIGNAL",
   description:
-    "A premium cinematic streetwear landing page for NIGHTFRAME: neo-noir apparel, VHS archives, midnight transmissions, and editorial fashion fragments.",
+    "Lanzamiento premium de streetwear oversized en México: DROP_001 — NO SIGNAL, prendas limitadas inspiradas en cine neo-noir, VHS y transmisiones perdidas.",
   metadataBase: new URL("https://nightframe.vercel.app"),
   openGraph: {
-    title: "NIGHTFRAME — DROP_001 NO SIGNAL",
+    title: "NIGHTFRAME México — DROP_001 NO SIGNAL",
     description:
-      "Luxury cinematic streetwear mixed with a lost sci-fi film archive.",
+      "Streetwear oversized premium desde México, construido como un archivo cinematográfico perdido.",
     siteName: "NIGHTFRAME",
     type: "website",
   },
@@ -22,7 +22,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="es-MX">
       <body>{children}</body>
     </html>
   );
